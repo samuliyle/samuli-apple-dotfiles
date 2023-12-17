@@ -19,6 +19,9 @@ defaults write com.apple.dock wvous-br-modifier -int 0
 # Disable bigger mouse pointer when shaking it.
 defaults write NSGlobalDomain CGDisableCursorLocationMagnification -bool true
 
+# Always show hidden files in Finder.
+defaults write com.apple.finder AppleShowAllFiles -boolean true
+
 ########################################
 # Keyboard shortcuts
 ########################################
