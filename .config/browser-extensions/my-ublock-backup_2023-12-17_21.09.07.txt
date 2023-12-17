@@ -1,0 +1,47 @@
+{
+  "timeStamp": 1702840147404,
+  "version": "1.54.0",
+  "userSettings": {
+    "advancedUserEnabled": true,
+    "importedLists": [],
+    "popupPanelSections": 63
+  },
+  "selectedFilterLists": [
+    "user-filters",
+    "ublock-filters",
+    "ublock-badware",
+    "ublock-privacy",
+    "ublock-quick-fixes",
+    "ublock-unbreak",
+    "adguard-generic",
+    "easylist",
+    "adguard-spyware",
+    "adguard-spyware-url",
+    "easyprivacy",
+    "urlhaus-1",
+    "fanboy-thirdparty_social",
+    "fanboy-cookiemonster",
+    "plowe-0",
+    "FIN-0"
+  ],
+  "hiddenSettings": {},
+  "whitelist": [
+    "about-scheme",
+    "chrome-extension-scheme",
+    "chrome-scheme",
+    "colab.research.google.com",
+    "edge-scheme",
+    "moz-extension-scheme",
+    "opera-scheme",
+    "renji-xd.github.io",
+    "tyomarkkinatori.fi",
+    "vivaldi-scheme",
+    "www.linkedin.com",
+    "www.unibed.fi",
+    "wyciwyg-scheme"
+  ],
+  "dynamicFilteringString": "behind-the-scene * * noop\nbehind-the-scene * inline-script noop\nbehind-the-scene * 1p-script noop\nbehind-the-scene * 3p-script noop\nbehind-the-scene * 3p-frame noop\nbehind-the-scene * image noop\nbehind-the-scene * 3p noop",
+  "urlFilteringString": "",
+  "hostnameSwitchesString": "no-large-media: behind-the-scene false\nno-csp-reports: * true\nno-strict-blocking: ad.doubleclick.net true",
+  "userFilters": "! 2022-07-17 https://www.reddit.com\nwww.reddit.com##.cookie-infobar.with-btn.with-icon.md-container-small.reddit-infobar\n\n! 2022-07-18 https://bunpro.jp\nbunpro.jp##.mt-3.justify-content-center.align-items-center.flex-column.d-flex.px-0.pb-0.pt-3.community-container\n\n! 2022-08-16 https://vim.rtorr.com\nvim.rtorr.com##.sponsor\nvim.rtorr.com###footer\n\n! 2022-09-17 https://www.twitch.tv\nwww.twitch.tv##.kJHXRx.Layout-sc-nxg1ff-0\n\n! 2022-12-15 https://www.twitch.tv\nwww.twitch.tv##.bsRjSc.Layout-sc-1xcs6mc-0\n\n! 2023-08-14 https://bunpro.jp\nbunpro.jp##section.p-24.mt-16.bg-secondary-bg.border-rim.border.rounded:nth-of-type(2)\n"
+}
