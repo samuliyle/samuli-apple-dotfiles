@@ -13,11 +13,17 @@ colorizeLocation=$appleDir/shell/colorize/colorize.py
 export CLICOLOR=1
 
 # Specify which 'ls' colors to use
-export LSCOLORS=ExFxBxDxCxegedabagacad
+export LS_COLORS="$(vivid generate snazzy)"
+# export LSCOLORS=ExFxBxDxCxegedabagacad
 
 # Set default editors
 # export EDITOR=vim
 export VISUAL="/opt/homebrew/bin/code"
+
+if [ "$OSTYPE" != linux-gnu ]; then  # Is this the macOS system?
+    # BSD version of ls does not use LS_COLORS, use the GNU version of ls instead: brew install coreutils
+    alias ls="gls --color -h --group-directories-first"
+fi
 
 # Typos
 alias Cd='cd'
@@ -32,6 +38,20 @@ alias s='$VISUAL'
 # Misc. aliases
 alias editzsh='editbash'
 alias sourcezsh='sourcebash'
+
+# Verbosity and settings that you pretty much just always are going to want.
+alias \
+	cp="cp -iv" \
+	mv="mv -iv" \
+	rm="rm -vI" \
+	mkd="mkdir -pv" \
+	yt="yt-dlp --embed-metadata -i" \
+	yta="yt -x -f bestaudio/best"
+
+# Colorize commands when possible.
+alias \
+	grep="grep --color=auto" \
+	diff="diff --color=auto"
 
 ####################
 # Helper functions #
