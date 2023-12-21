@@ -8,10 +8,10 @@ local mappings = {
     { { "alt" }, "1", "Brave Browser" },
     { { "alt" }, "2", "iTerm" },
     { { "alt" }, "3", "Visual Studio Code" },
-    { { "alt" }, "4", "Finder" },
+    { { "alt" }, "4", "Obsidian" },
     { { "alt" }, "5", "Anki" },
     { { "alt" }, "6", "mpv" },
-    { { "alt" }, "7", "Notes" }
+    { { "alt" }, "7", "Finder" }
 }
 
 for _, mapping in ipairs(mappings) do
