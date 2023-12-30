@@ -19,9 +19,6 @@ defaults write com.apple.dock wvous-br-modifier -int 0
 # Disable bigger mouse pointer when shaking it.
 defaults write NSGlobalDomain CGDisableCursorLocationMagnification -bool true
 
-# Always show hidden files in Finder.
-defaults write com.apple.finder AppleShowAllFiles -boolean true
-
 ########################################
 # Keyboard shortcuts
 ########################################
@@ -35,6 +32,9 @@ defaults write com.apple.dock show-recents -bool false
 
 # Autohides the Dock.
 defaults write com.apple.dock autohide -bool true
+
+# Disable bouncing dock icons.
+defaults write com.apple.dock no-bouncing -bool true
 
 ########################################
 # Finder
@@ -50,6 +50,8 @@ defaults write com.apple.finder ShowPathbar -bool true
 # Four-letter codes for the other view modes: `icnv`, `clmv`, `Flwv`.
 defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 
+# Always show hidden files in Finder.
+defaults write com.apple.finder AppleShowAllFiles -boolean true
 
 ################################################################################
 # AltTab configuration
